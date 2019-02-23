@@ -1,0 +1,86 @@
+
+
+.tab-bar .tab {
+  transition: border-width 0.5s ease-in-out, color 0.5s ease-in-out, max-width 0.5s ease-in-out;
+}
+
+.tab-bar .tab.active {
+   font-weight: bold;
+   font-size: 13px;
+   border-style: solid;
+   border-width: 0px;
+   border-bottom-width: 3px;
+   border-right-width: 1px;
+   border-color:  @background-color-success;
+   width: 10%;
+}
+
+.left .tab-bar .tab.active{
+    border: none;
+}
+
+.settings-view select.form-control:hover, .settings-view select.form-control:focus {
+  color: white;
+  background-color: @text-color-success;
+}
+
+.btn:hover, .btn:focus {
+  color: white;
+}
+
+.input-checkbox:checked {
+  background-color: @background-color-success;
+}
+
+.btn.btn-primary {
+  color: @text-color-white;
+}
+
+li.active {
+  background-color: @background-color-success;
+  color: @text-color-white;
+}
+
+.settings-view .config-menu .nav > li.active > a{
+  color: @text-color-white;
+  background-color:  @background-color-success;
+}
+
+.settings-view select.form-control {
+  background: white;
+  color: @text-color-success;
+}
+
+.list-group .selected::before, .list-tree .selected::before {
+  background-color: @text-color-success;
+}
+
+.list-tree .selected, .tree-view .list-item.selected {
+    color: @text-color-white;
+}
+
+atom-panel-container.left {
+ box-shadow: 0.2px 0px 10px 0.5px rgba(65, 65, 65, 0.26);
+ border-top-left-radius: 200px;
+ border-bottom-left-radius: 200px;
+ z-index: 10;
+}
+
+.list-inline.tab-bar.inset-panel {
+  border-style: solid;
+  border-color:#e8e8e8;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-radius: 2px;
+}
+
+.tab-bar .tab {
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 1px;
+  border-color: #e8e8e8;
+}
+
+.tab-bar .tab:hover {
+  cursor: pointer;
+}
